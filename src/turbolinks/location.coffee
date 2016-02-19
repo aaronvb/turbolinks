@@ -31,7 +31,7 @@ class Turbolinks.Location
     @getPathComponents().slice(-1)[0]
 
   getExtension: ->
-    @getLastPathComponent().match(/\.[^.]*$/)?[0]
+    @getLastPathComponent().match(/\.[a-z]*$/)?[0]
 
   isHTML: ->
     extension = @getExtension()
